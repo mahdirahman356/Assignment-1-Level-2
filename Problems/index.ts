@@ -35,9 +35,12 @@
     //  Problem-3
 
     const concatenateArrays = <T>(...arrays: T[][]): T[] => {
-        return [].concat(...arrays)
+        return ([] as T[]).concat(...arrays);
     }
+     
+
     console.log(concatenateArrays([12], [8], [33]))
+    console.log(concatenateArrays(["hello"], ["world"]));
 
     // problem -4
 
