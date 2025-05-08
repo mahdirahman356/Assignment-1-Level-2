@@ -1,5 +1,4 @@
 {
-    // Problem-1
     const formatString = (input: string, toUpper: boolean = true) => {
         if (toUpper) {
             return input.toUpperCase()
@@ -17,7 +16,6 @@
     console.log(makeUpperOrLower3)
 
 
-    // problem-2
 
     const filterByRating = (items: { title: string; rating: number }[]): { title: string; rating: number }[] => {
         return items.filter(item => item.rating > 4)
@@ -32,7 +30,6 @@
     const highRatedBooks = filterByRating(books)
     console.log(highRatedBooks)
 
-    //  Problem-3
 
     const concatenateArrays = <T>(...arrays: T[][]): T[] => {
         return ([] as T[]).concat(...arrays);
@@ -42,7 +39,6 @@
     console.log(concatenateArrays([12], [8], [33]))
     console.log(concatenateArrays(["hello"], ["world"]));
 
-    // problem -4
 
     class Vehicle {
         private make: string;
@@ -78,7 +74,6 @@
     console.log(myCar.getModel())
 
 
-    // Problem-5
     const processValue = (value: string | number): number | undefined => {
         if (typeof value === "string") {
             return value.length
@@ -95,7 +90,6 @@
     console.log(processValue("hello"))
     console.log(processValue(10))
 
-    // problem-6
 
     interface Product {
         name: string;
@@ -139,13 +133,11 @@
         }
     }
 
-    getDayType(Day.Monday);   // Output: "Weekday"
-    getDayType(Day.Sunday);   // Output: "Weekend"
+    getDayType(Day.Monday);  
+    getDayType(Day.Sunday);   
     console.log(getDayType(Day.Monday))
     console.log(getDayType(Day.Sunday))
 
-
-    //    problem-8
 
     const squareAsync = async(n: number): Promise<number> => {
                    return new Promise<number>((resolve, reject) => {
